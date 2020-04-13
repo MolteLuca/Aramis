@@ -47,7 +47,7 @@
         $.getJSON('https://aimtell.com/files/sites.json', function (data) {
                 for (let i = 0; i < data.sites.length; i++) {
                     let row = document.createElement('tr');
-                    row.innerHTML = '<td>' + data.sites[i].id + '</td>' +
+                    row.innerHTML = '<th scope="col">' + data.sites[i].id + '</th>' +
                         '<td>' + data.sites[i].name + '</td>' +
                         '<td>' + data.sites[i].url + '</td>';
                     table.appendChild(row);
